@@ -1,0 +1,7 @@
+config/NzbDrone
+config/Radarr
+config/hub
+config/.mono/keypairs
+aws/credentials
+config/configstore/update-notifier-npm.json
+config/thefuck/__pycache__/settings.cpython-38.pyc
