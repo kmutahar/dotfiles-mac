@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ln -sf ~/.dotfiles/config ~/.config
-
 ln -sf ~/.dotfiles/aws ~/.aws
 
 ln -sf ~/.dotfiles/shell/zshrc ~/.zshrc
