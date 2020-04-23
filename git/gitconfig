@@ -1,0 +1,19 @@
+[user]
+	name = Khaldoon Mutahar
+	email = git@mutahar.me
+	signingkey = 82BE371CB63A1D69
+[core]
+	excludesfile = /Users/kmutahar/.dotfiles/git/gitignore_global
+[commit]
+	gpgsign = true
+	template = /Users/kmutahar/.stCommitMsg
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[diff]
+	submodule = log
