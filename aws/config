@@ -1,0 +1,4 @@
+[default]
+region = eu-central-1
+output = json
+cli_pager=
