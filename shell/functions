@@ -1,0 +1,27 @@
+# AWS Commands
+function ls-new() {
+	aws lightsail create-instances-from-snapshot \
+	--instance-snapshot-name remote-dl-snapshot \
+	--instance-names $1 \
+	--availability-zone eu-central-1a \
+	--bundle-id nano_2_0
+}
+function ls-delete() {
+	aws lightsail delete-instance --instance-name $1;
+}
+function ls-start() {
+	aws lightsail start-instance --instance-name $1;
+}
+function ls-stop() {
+	aws lightsail stop-instance --instance-name $1;
+}
+
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+function gclone {
+  git clone git@github.com:kmutahar/$1 && cd $1
+}

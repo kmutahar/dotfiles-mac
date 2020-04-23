@@ -1,0 +1,36 @@
+# Shortcuts
+alias cask="brew cask"
+alias sha256="shasum -a 256"
+alias sha512="shasum -a 512"
+
+# Git commmands
+alias gcl='git clone --recurse-submodules'
+
+# Easier navigation
+alias ~="cd ~"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"   # Go to previous dir with -
+alias open.="open ."
+alias code.="code ."
+
+# Concatenate and print content of files (add line numbers)
+alias catn="cat -n"
+
+# Location Shortcuts
+alias dotfiles="cd ~/.dotfiles"
+
+# Delete .DS_Store
+alias deleteds="find . -type f -name '*.DS_Store' -ls -delete"
+
+# AWS Commands
+alias s3="aws s3"
+alias ls-get="aws lightsail get-instances"
+
+alias lg='lazygit'
+
+eval $(thefuck --alias) # thefuck alias
+
+alias rm='echo "This is not the command you are looking for."; false'
