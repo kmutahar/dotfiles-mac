@@ -25,6 +25,11 @@ alias dotfiles="cd ~/.dotfiles"
 # Delete .DS_Store
 alias deleteds="find . -type f -name '*.DS_Store' -ls -delete"
 
+# Local SSH
+alias ssh-status="sudo systemsetup -getremotelogin"
+alias ssh-enable="sudo systemsetup -f -setremotelogin on"
+alias ssh-disable="sudo systemsetup -f -setremotelogin off"
+
 # AWS Commands
 alias s3="aws s3"
 alias ls-get="aws lightsail get-instances"
