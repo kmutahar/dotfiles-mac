@@ -33,6 +33,12 @@ alias ssh-status="sudo systemsetup -getremotelogin"
 alias ssh-enable="sudo systemsetup -f -setremotelogin on"
 alias ssh-disable="sudo systemsetup -f -setremotelogin off"
 
+# Brew Commands
+alias brewup="brew update; brew upgrade"
+alias brewclean="brew cleanup; brew doctor"
+alias brewreset="brew update-reset && brew update"
+alias brewresethard="cd $(brew --repo); git fetch; git reset --hard origin/master; brew update"
+
 # AWS Commands
 alias s3="aws s3"
 alias ls-get="aws lightsail get-instances"
