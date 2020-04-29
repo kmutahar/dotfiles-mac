@@ -25,6 +25,9 @@ alias dotfiles="cd ~/.dotfiles"
 # Delete .DS_Store
 alias deleteds="find . -type f -name '*.DS_Store' -ls -delete"
 
+# Edit host file
+alias ehost="sudo nano /etc/hosts"
+
 # Local SSH
 alias ssh-status="sudo systemsetup -getremotelogin"
 alias ssh-enable="sudo systemsetup -f -setremotelogin on"
