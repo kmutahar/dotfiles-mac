@@ -25,7 +25,6 @@ applications_to_install=(
     vitorgalvao/tiny-scripts/cask-repair
     wget
     youtube-dl
-    z
 
 )
 brew install "${applications_to_install[@]}"
