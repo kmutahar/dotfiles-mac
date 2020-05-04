@@ -1,3 +1,4 @@
+# ---------------RND Commands---------------
 # Shortcuts
 alias cask="brew cask"
 alias sha256="shasum -a 256"
@@ -6,6 +7,10 @@ alias sha512="shasum -a 512"
 # Git commmands
 alias gcl='git clone --recurse-submodules'
 
+# Concatenate and print content of files (add line numbers)
+alias catn="cat -n"
+
+# ---------------Navigation---------------
 # Easier navigation
 alias ~="cd ~"
 alias ..="cd .."
@@ -16,23 +21,50 @@ alias -- -="cd -"   # Go to previous dir with -
 alias open.="open ."
 alias code.="code ."
 
-# Concatenate and print content of files (add line numbers)
-alias catn="cat -n"
-
 # Location Shortcuts
 alias dotfiles="cd ~/.dotfiles"
+
+# ---------------System Commands---------------
+# Disable rm
+alias rm='echo "This is not the command you are looking for."; false'
 
 # Delete .DS_Store
 alias deleteds="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Edit host file
-alias ehost="sudo nano /etc/hosts"
+# Flush DNS
+alias flushdns="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
+
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Local SSH
 alias ssh-status="sudo systemsetup -getremotelogin"
 alias ssh-enable="sudo systemsetup -f -setremotelogin on"
 alias ssh-disable="sudo systemsetup -f -setremotelogin off"
 
+# Reload native apps
+alias killfinder="killall Finder"
+alias killdock="killall Dock"
+alias killmenubar="killall SystemUIServer NotificationCenter"
+alias killos="killfinder && killdock && killmenubar"
+
+# Show/hide desktop icons
+alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias desktophide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+
+# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume output volume 100'"
+
+# Edit host file
+alias ehost="sudo nano /etc/hosts"
+
+# A combination of other commands to run all at once
+alias systemclean="flushdns; deleteds; emptytrash"
+
+# ---------------App Commands---------------
 # Brew Commands
 alias brewup="brew update; brew upgrade"
 alias brewclean="brew cleanup; brew doctor"
@@ -44,7 +76,9 @@ alias s3="aws s3"
 alias ls-get="aws lightsail get-instances"
 
 alias lg='lazygit'
+eval $(thefuck --alias)
 
-eval $(thefuck --alias) # thefuck alias
+# ---------------Check Later Commands---------------
 
-alias rm='echo "This is not the command you are looking for."; false'
+# Update Commands
+alias npmup="npm install npm -g; npm update -g"
