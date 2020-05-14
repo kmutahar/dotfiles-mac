@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.dotfiles/shell/aliases ] && source ~/.dotfiles/shell/aliases
 [ -f ~/.dotfiles/shell/functions ] && source ~/.dotfiles/shell/functions
 [ -f ~/.dotfiles/shell/nvm ] && source ~/.dotfiles/shell/nvm
+[ -f ~/.dotfiles/shell/private ] && source ~/.dotfiles/shell/private
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # Loads fzf
 eval "$(hub alias -s)" # Alias hub when using git
