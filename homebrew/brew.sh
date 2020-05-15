@@ -16,7 +16,7 @@ applications_to_install=(
     git
     github/gh/gh
     hub
-    jesseduffield/lazygit/lazygit
+    lazygit
     mas
     neofetch
     nvie/tap/git-toolbelt

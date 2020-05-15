@@ -23,7 +23,6 @@ taps_to_install=(
     homebrew/core
     homebrew/livecheck
     homebrew/services
-    jesseduffield/lazygit
     kmutahar/tap
     nvie/tap
     vitorgalvao/tiny-scripts
