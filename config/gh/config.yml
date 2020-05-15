@@ -1,0 +1,4 @@
+hosts:
+    github.com:
+        user: kmutahar
+git_protocol: ssh
