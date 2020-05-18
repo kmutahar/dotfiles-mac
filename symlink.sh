@@ -2,6 +2,8 @@
 
 ln -sf ~/.dotfiles/aws ~/.aws
 
+ln -sf ~/.dotfiles/config ~/.config
+
 ln -sf ~/.dotfiles/shell/zshrc ~/.zshrc
 
 ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
