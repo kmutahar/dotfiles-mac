@@ -10,6 +10,9 @@ alias gcl='git clone --recurse-submodules'
 # Concatenate and print content of files (add line numbers)
 alias catn="cat -n"
 
+# NPM Speedtest
+alias speedtest="speed-test"
+
 # ---------------Navigation---------------
 # Easier navigation
 alias ~="cd ~"
