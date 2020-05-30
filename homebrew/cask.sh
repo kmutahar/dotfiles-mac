@@ -39,7 +39,7 @@ applications_to_install=(
     istat-menus
     sourcetree
     kmutahar/tap/unclutter
-    kmutahar/tap/ssh-config-editor
+    ssh-config-editor
     homebrew/cask-versions/soulver2
 
     plex
