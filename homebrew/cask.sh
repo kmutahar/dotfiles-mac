@@ -21,7 +21,7 @@ applications_to_install=(
     iterm2
 
     # Quick Look Plugins Source: https://github.com/sindresorhus/quick-look-plugins
-    qladdict
+    qladdict # Lets you view subtitles .srt files
     qlcolorcode # Preview source code files with syntax highlighting
     qlimagesize # Display image size and resolution
     qlmarkdown # Preview Markdown files
