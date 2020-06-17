@@ -5,3 +5,6 @@ config/.mono/keypairs
 aws/credentials
 config/configstore/update-notifier-*.json
 config/thefuck/__pycache__/settings.cpython-38.pyc
+
+config/gh/hosts.yml
+config/gh/state.yml
