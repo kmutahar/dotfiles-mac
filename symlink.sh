@@ -10,6 +10,6 @@ ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 ln -sf ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 
-ln -sf ~/Entertainment/NzbDrone ~/.dotfiles/config/NzbDrone
+ln -sf ~/Entertainment/Media-Center-Config/NzbDrone ~/.dotfiles/config/NzbDrone
 
-ln -sf ~/Entertainment/Radarr ~/.dotfiles/config/Radarr
+ln -sf ~/Entertainment/Media-Center-Config/Radarr ~/.dotfiles/config/Radarr
