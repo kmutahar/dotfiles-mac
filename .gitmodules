@@ -1,3 +1,6 @@
 [submodule "ohmyzsh-custom/plugins/zsh-z"]
 	path = ohmyzsh-custom/plugins/zsh-z
 	url = https://github.com/agkozak/zsh-z.git
+[submodule "dotfiles-private"]
+	path = dotfiles-private
+	url = git@github.com:kmutahar/dotfiles-private
