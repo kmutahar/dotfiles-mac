@@ -4,6 +4,7 @@
 	signingkey = 82BE371CB63A1D69
 [core]
 	excludesfile = /Users/kmutahar/.dotfiles/git/gitignore_global
+	editor = nano
 [commit]
 	gpgsign = true
 	template = /Users/kmutahar/.stCommitMsg
