@@ -18,3 +18,5 @@
 	trustExitCode = true
 [diff]
 	submodule = log
+[submodule]
+	recurse = true
