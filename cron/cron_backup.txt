@@ -1,3 +1,5 @@
 MAILTO=""
 
 */5 * * * * ~/.dotfiles/dotfiles-private/nextdns-cron.sh >> ~/log/`/bin/date +\%Y_\%m_\%d_\%H`_nextdns_output.log 2>&1
+
+*/10 * * * * ~/.dotfiles/dotfiles-private/unclutter-notes-cron.sh >> ~/log/`/bin/date +\%Y_\%m`_unclutter-notes_output.log 2>&1
