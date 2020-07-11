@@ -12,15 +12,15 @@ lazynvm() {
 }
 
 nvm() {
-  lazynvm 
+  lazynvm
   nvm $@
 }
- 
+
 node() {
   lazynvm
   node $@
 }
- 
+
 npm() {
   lazynvm
   npm $@

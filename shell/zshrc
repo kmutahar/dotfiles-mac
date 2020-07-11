@@ -116,7 +116,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1 # Don't update homebrew with every brew install
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 
 # The following command is used with homebrew/command-not-found however it slows down shell load
-#if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi 
+#if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
 export EDITOR='nano'
 export VISUAL='nano'
