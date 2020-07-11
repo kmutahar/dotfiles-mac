@@ -1,5 +1,3 @@
-config/NzbDrone
-config/Radarr
 config/hub
 config/.mono/keypairs
 aws/credentials
