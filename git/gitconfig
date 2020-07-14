@@ -20,3 +20,5 @@
 	submodule = log
 [submodule]
 	recurse = true
+[tag]
+	forceSignAnnotated = true
