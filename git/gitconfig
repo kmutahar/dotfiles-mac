@@ -7,7 +7,7 @@
 	editor = nano
 [commit]
 	gpgsign = true
-	template = /Users/kmutahar/.stCommitMsg
+	template = /Users/kmutahar/.dotfiles/git/gitmessage_global
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [difftool "sourcetree"]
