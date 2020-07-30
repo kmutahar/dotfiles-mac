@@ -1,0 +1,5 @@
+set linenumbers # Display line numbers to the left of the text area.
+set mouse # Enable mouse support, so that mouse clicks can be used to place the cursor, set the mark (with a double click), or execute shortcuts.
+set saveonexit # Save a changed buffer automatically on exit (^X); don’t prompt. (The old form of this option, set tempfile, is deprecated.)
+set tabsize 4 # Use a tab size of number columns. The value of number must be greater than 0. The default value is 8.
+set tabstospaces # Convert typed tabs to spaces.
