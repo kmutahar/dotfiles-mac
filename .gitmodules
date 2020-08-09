@@ -4,3 +4,6 @@
 [submodule "dotfiles-private"]
 	path = dotfiles-private
 	url = git@github.com:kmutahar/dotfiles-private
+[submodule "config/cheat/cheatsheets/community"]
+	path = config/cheat/cheatsheets/community
+	url = https://github.com/cheat/cheatsheets.git
