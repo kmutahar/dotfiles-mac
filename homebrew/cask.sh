@@ -75,7 +75,7 @@ applications_to_install=(
     banktivity
 
     mactex
-    microsoft-office-2016
+    microsoft-office
 
 )
 brew cask install "${applications_to_install[@]}"
