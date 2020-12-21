@@ -104,6 +104,7 @@ alias ghoststart="cd ~/ghost && ghost start"
 alias ghostrestart="cd ~/ghost && ghost restart"
 alias ghoststop="cd ~/ghost && ghost stop"
 
+alias nextdns="sudo nextdns"
 # ---------------Check Later Commands---------------
 
 # Update Commands
