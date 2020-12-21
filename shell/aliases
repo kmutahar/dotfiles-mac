@@ -89,6 +89,11 @@ alias ls-get="aws lightsail get-instances"
 alias lg='lazygit'
 eval $(thefuck --alias)
 
+# Jekyll Commands
+alias jserve="bundle exec jekyll serve --incremental"
+alias jbuild="bundle exec jekyll build"
+alias jclean="bundle exec jekyll clean"
+
 # ---------------Check Later Commands---------------
 
 # Update Commands
