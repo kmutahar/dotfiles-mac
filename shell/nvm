@@ -6,7 +6,7 @@
 
 
 lazynvm() {
-  unset -f nvm node npm npx yarn ghost gscan speed-test corona git-file-history create-react-app netlify
+  unset -f nvm node npm npx yarn ghost gscan speed-test corona git-file-history create-react-app netlify htmlhint
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 }
@@ -69,4 +69,9 @@ create-react-app() {
 netlify() {
   lazynvm
   netlify $@
+}
+
+htmlhint() {
+  lazynvm
+  htmlhint $@
 }
