@@ -1,6 +1,7 @@
 # ---------------RND Commands---------------
 # Shortcuts
 alias cask="brew cask"
+alias "cask ls"="brew list --cask"
 alias sha256="shasum -a 256"
 alias sha512="shasum -a 512"
 
