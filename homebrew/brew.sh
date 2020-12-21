@@ -8,23 +8,23 @@ echo
 
 applications_to_install=(
 
-    awscli
-    blacktop/tap/ipsw
-    coreutils
-    dockutil
-    fzf
-    git
-    github/gh/gh
-    hub
-    lazygit
-    mas
-    neofetch
-    nvie/tap/git-toolbelt
-    thefuck
-    tree
-    vitorgalvao/tiny-scripts/cask-repair
-    wget
-    youtube-dl
+  awscli
+  blacktop/tap/ipsw
+  coreutils
+  dockutil
+  fzf
+  git
+  github/gh/gh
+  hub
+  lazygit
+  mas
+  neofetch
+  nvie/tap/git-toolbelt
+  thefuck
+  tree
+  vitorgalvao/tiny-scripts/cask-repair
+  wget
+  youtube-dl
 
 )
 brew install "${applications_to_install[@]}"
