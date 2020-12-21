@@ -6,6 +6,8 @@ ln -sf ~/.dotfiles/config ~/.config
 
 ln -sf ~/.dotfiles/shell/zshrc ~/.zshrc
 
+ln -sf ~/.dotfiles/shell/bashrc ~/.bashrc
+
 ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 ln -sf ~/.dotfiles/git/gitignore_global ~/.gitignore_global
