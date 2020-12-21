@@ -72,7 +72,7 @@ alias systemclean="flushdns; deleteds; emptytrash"
 
 # Cron
 # https://serverfault.com/questions/94351/how-to-disable-everything-in-crontab-l
-alias cron-restore="crontab ~/.dotfiles/cron/cron_backup.txt"
+alias recrontab="crontab ~/.dotfiles/cron/cron_backup.txt"
 alias cron-delete="crontab -l > ~/.dotfiles/cron/`/bin/date +\%Y_\%m_\%d_\%H`-cron_backup.txt && crontab -r"
 
 # ---------------App Commands---------------
