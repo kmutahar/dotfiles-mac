@@ -75,6 +75,10 @@ alias systemclean="flushdns; deleteds; emptytrash"
 alias recrontab="crontab ~/.dotfiles/cron/cron_backup.txt"
 alias cron-delete="crontab -l > ~/.dotfiles/cron/`/bin/date +\%Y_\%m_\%d_\%H`-cron_backup.txt && crontab -r"
 
+# Location based commands
+alias home="crontab ~/.dotfiles/cron/cron_backup.txt && nextdns start"
+alias uni="crontab -l > ~/.dotfiles/cron/`/bin/date +\%Y_\%m_\%d_\%H`-cron_backup.txt && crontab -r && nextdns stop"
+
 # ---------------App Commands---------------
 # Brew Commands
 alias brewup="brew update; brew upgrade"
