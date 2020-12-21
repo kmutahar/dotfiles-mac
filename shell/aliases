@@ -94,6 +94,16 @@ alias jserve="bundle exec jekyll serve --incremental"
 alias jbuild="bundle exec jekyll build"
 alias jclean="bundle exec jekyll clean"
 
+# Ghost
+alias themescan="gscan ~/git/ghost-blog/mutahar.me-ghost-theme"
+alias ghost-theme="cd ~/git/ghost-blog/mutahar.me-ghost-theme"
+alias bp="cd ~/git/ghost-blog/blog-posts"
+alias bpd="cd ~/git/ghost-blog/blog-posts-drafts"
+alias ghostinstall="cd ~/ghost && ghost install local"
+alias ghoststart="cd ~/ghost && ghost start"
+alias ghostrestart="cd ~/ghost && ghost restart"
+alias ghoststop="cd ~/ghost && ghost stop"
+
 # ---------------Check Later Commands---------------
 
 # Update Commands
