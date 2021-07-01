@@ -6,7 +6,7 @@ alias sha256="shasum -a 256"
 alias sha512="shasum -a 512"
 
 # Git commmands
-alias gcl='git clone --recurse-submodules'
+alias gcl="git clone --recurse-submodules"
 
 # Concatenate and print content of files (add line numbers)
 alias catn="cat -n"
@@ -30,7 +30,7 @@ alias dotfiles="cd ~/.dotfiles"
 
 # ---------------System Commands---------------
 # Disable rm
-alias rm='echo "This is not the command you are looking for."; false'
+alias rm="echo 'This is not the command you are looking for.'; false"
 
 # Delete .DS_Store
 alias deleteds="find . -type f -name '*.DS_Store' -ls -delete"
@@ -91,7 +91,7 @@ alias brewresethard="cd $(brew --repo); git fetch; git reset --hard origin/maste
 alias s3="aws s3"
 alias ls-get="aws lightsail get-instances"
 
-alias lg='lazygit'
+alias lg="lazygit"
 eval $(thefuck --alias)
 
 # Jekyll Commands
