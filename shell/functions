@@ -36,3 +36,7 @@ function mkd() {
 function gclone {
   git clone git@github.com:kmutahar/$1 && cd $1
 }
+
+function cask() {
+  brew $1 --cask $2
+}
