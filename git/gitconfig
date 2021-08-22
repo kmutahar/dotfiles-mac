@@ -1,24 +1,29 @@
 [user]
-	name = Khaldoon Mutahar
-	email = git@mutahar.me
-	signingkey = 82BE371CB63A1D69
+  name = Khaldoon Mutahar
+  email = git@mutahar.me
+  signingkey = 82BE371CB63A1D69
 [core]
-	excludesfile = /Users/kmutahar/.dotfiles/git/gitignore_global
-	editor = nano
+  excludesfile = /Users/kmutahar/.dotfiles/git/gitignore_global
+  editor = nano
 [commit]
-	gpgsign = true
-	template = /Users/kmutahar/.dotfiles/git/gitmessage_global
+  gpgsign = true
+  template = /Users/kmutahar/.dotfiles/git/gitmessage_global
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+  program = /usr/local/MacGPG2/bin/gpg2
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [diff]
-	submodule = log
+  submodule = log
 [submodule]
-	recurse = true
+  recurse = true
 [tag]
-	forceSignAnnotated = true
+  forceSignAnnotated = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
