@@ -1,8 +1,9 @@
-config/hub
-config/.mono/keypairs
 aws/credentials
-config/configstore/update-notifier-*.json
-config/thefuck/__pycache__/settings.cpython-38.pyc
-
+config/.mono
+config/configstore
+config/emby-server
 config/gh/hosts.yml
-config/gh/state.yml
+config/hub
+config/ombi
+config/Sonarr-old
+config/thefuck
