@@ -76,7 +76,7 @@ alias recrontab="crontab ~/.dotfiles/cron/cron_backup.txt"
 alias cron-delete="crontab -l > ~/.dotfiles/cron/`/bin/date +\%Y_\%m_\%d_\%H`-cron_backup.txt && crontab -r"
 
 # Location based commands
-alias home="crontab ~/.dotfiles/cron/cron_backup.txt && nextdns start"
+alias home="sudo spoof-mac reset en0 && crontab ~/.dotfiles/cron/cron_backup.txt && nextdns start"
 alias uni="crontab -l > ~/.dotfiles/cron/`/bin/date +\%Y_\%m_\%d_\%H`-cron_backup.txt && crontab -r && nextdns stop"
 
 # ---------------App Commands---------------
@@ -85,6 +85,14 @@ alias brewup="brew update; brew upgrade"
 alias brewclean="brew cleanup; brew doctor"
 alias brewreset="brew update-reset && brew update"
 alias brewresethard="cd $(brew --repo); git fetch; git reset --hard origin/master; brew update"
+
+# NPM Commands
+alias npmup="npm install npm -g; npm update -g"
+alias npmls="npm list -g -depth 0"
+
+# Gem Commands
+alias gemup="sudo gem update --system; sudo gem update"
+alias gemclean="sudo gem cleanup"
 
 # AWS Commands
 alias s3="aws s3"
@@ -110,10 +118,6 @@ alias ghoststop="cd ~/ghost && ghost stop"
 
 alias nextdns="sudo nextdns"
 # ---------------Check Later Commands---------------
-
-# Update Commands
-alias npmup="npm install npm -g; npm update -g"
-alias "npmls"="npm list -g -depth 0"
 
 # Log off
 alias logoff="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"

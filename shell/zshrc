@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.dotfiles/shell/aliases ] && source ~/.dotfiles/shell/aliases
 [ -f ~/.dotfiles/shell/functions ] && source ~/.dotfiles/shell/functions
 [ -f ~/.dotfiles/shell/nvm ] && source ~/.dotfiles/shell/nvm
-[ -f ~/.dotfiles/shell/private ] && source ~/.dotfiles/shell/private
+[ -f ~/.dotfiles/dotfiles-private/tokens ] && source ~/.dotfiles/dotfiles-private/tokens
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # Loads fzf
 eval "$(hub alias -s)" # Alias hub when using git
@@ -114,9 +114,19 @@ eval "$(hub alias -s)" # Alias hub when using git
 # Homebrew Extra
 export HOMEBREW_NO_AUTO_UPDATE=1 # Don't update homebrew with every brew install command
 export HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_BOTTLE_SOURCE_FALLBACK=1
 
 # The following command is used with homebrew/command-not-found however it slows down shell load
 #if brew command command-not-found-init > /dev/null 2>&1; then eval "$(brew command-not-found-init)"; fi
 
 export EDITOR='nano'
 export VISUAL='nano'
+
+export PATH="/usr/local/opt/curl/bin:$PATH"
+eval "$(rbenv init -)"
+
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"

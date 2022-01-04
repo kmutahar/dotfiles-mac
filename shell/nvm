@@ -3,10 +3,12 @@
 # grabbed from GitHub.com/fl0w_io @ https://gist.github.com/fl0w/07ce79bd44788f647deab307c94d6922
 
 
+# No longer Installed
+#corona create-react-app netlify htmlhint
 
 
 lazynvm() {
-  unset -f nvm node npm npx yarn ghost gscan speed-test corona git-file-history create-react-app netlify htmlhint
+  unset -f nvm node npm npx yarn conventional-changelog docsify eclint fast ghost git-file-history git-pending github-email gscan lighthouse netflix-migrate speed-test trash
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 }
@@ -36,24 +38,29 @@ yarn() {
   yarn $@
 }
 
+conventional-changelog() {
+  lazynvm
+  conventional-changelog $@
+}
+
+docsify() {
+  lazynvm
+  docsify $@
+}
+
+eclint() {
+  lazynvm
+  eclint $@
+}
+
+fast() {
+  lazynvm
+  fast $@
+}
+
 ghost() {
   lazynvm
   ghost $@
-}
-
-gscan() {
-  lazynvm
-  gscan $@
-}
-
-speed-test() {
-  lazynvm
-  speed-test $@
-}
-
-corona() {
-  lazynvm
-  corona $@
 }
 
 git-file-history() {
@@ -61,17 +68,37 @@ git-file-history() {
   git-file-history $@
 }
 
-create-react-app() {
+git-pending() {
   lazynvm
-  create-react-app $@
+  git-pending $@
 }
 
-netlify() {
+github-email() {
   lazynvm
-  netlify $@
+  github-email $@
 }
 
-htmlhint() {
+gscan() {
   lazynvm
-  htmlhint $@
+  gscan $@
+}
+
+lighthouse() {
+  lazynvm
+  lighthouse $@
+}
+
+netflix-migrate() {
+  lazynvm
+  netflix-migrate $@
+}
+
+speed-test() {
+  lazynvm
+  speed-test $@
+}
+
+trash() {
+  lazynvm
+  trash $@
 }
