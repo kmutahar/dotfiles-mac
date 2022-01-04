@@ -12,6 +12,6 @@ ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 ln -sf ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 
-ln -sf ~/Entertainment/Media-Center-Config/NzbDrone ~/.dotfiles/config/NzbDrone
+ln -sf ~/Media/Media-Center-Config/Sonarr ~/.dotfiles/config/Sonarr
 
-ln -sf ~/Entertainment/Media-Center-Config/Radarr ~/.dotfiles/config/Radarr
+ln -sf ~/Media/Media-Center-Config/Radarr ~/.dotfiles/config/Radarr
