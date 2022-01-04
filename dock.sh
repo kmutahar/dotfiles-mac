@@ -15,14 +15,18 @@ dockutil --no-restart --remove all
 
 dockutil --no-restart --add '/Applications/Safari.app'
 dockutil --no-restart --add '/Applications/Firefox Developer Edition.app'
+dockutil --no-restart --add '/Applications/Slack.app'
+dockutil --no-restart --add '/Applications/Zoho Mail - Desktop.app'
 dockutil --no-restart --add '/System/Applications/Messages.app'
-dockutil --no-restart --add '/Applications/Kiwi for Gmail.app'
+dockutil --no-restart --add '/Applications/iMazing.app'
 dockutil --no-restart --add '/System/Applications/App Store.app'
-dockutil --no-restart --add '/Applications/Banktivity 7.app'
 dockutil --no-restart --add '/Applications/Google Chrome.app'
-dockutil --no-restart --add '/Applications/Spotify.app'
 dockutil --no-restart --add '/Applications/iTerm.app'
 dockutil --no-restart --add '/Applications/ForkLift.app'
+dockutil --no-restart --add '/Applications/Visual Studio Code.app'
+dockutil --no-restart --add '/System/Applications/TextEdit.app'
+dockutil --no-restart --add '/Applications/Sourcetree.app'
+dockutil --no-restart --add '/System/Applications/System Preferences.app'
 
 # The following adds /Applications as a grid stack displayed as a folder for every user's dock on that machine:
 dockutil --add '/Applications' --sort name --display stack --view grid --allhomes
