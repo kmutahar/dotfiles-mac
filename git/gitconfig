@@ -27,3 +27,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[init]
+  defaultBranch = master
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[url "git@github.com:"] # https://jonhnnyweslley.net/blog/how-to-rewrite-git-urls-to-clone-faster-and-push-safer/
+  pushInsteadOf = https://github.com/
+  pushInsteadOf = git://github.com/
